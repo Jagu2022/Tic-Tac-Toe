@@ -1,0 +1,99 @@
+:root{
+   --background-color: #c5c3c6; 
+   --font-color: #46494b; 
+   --header-background-color: #4c5c68; 
+   --header-font-color: #b0e4db; 
+   --field-background-color: #ededee; 
+   --field-background-color-hover: #d8e4e9; 
+   --border-color: #555; 
+   --blue-border-color: #2a3a46; 
+   --button-background-color: #4c5c68; 
+   --button-hover-background: #3b4b57; 
+   --button-active-background: #2a3a46; 
+   --font: 'Varela Round', sans-serif;
+}
+body{
+    background-color: var(--background-color);
+    font-family: var(--font);
+    color: var(--font-color);
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: Roboto; */
+}
+.title{
+  padding-top: 5px;
+  height: 50px;
+  text-align: center;
+  color: var(--header-font-color);
+  background-color: var(--header-background-color);
+}
+.players_info{
+  display: flex;
+  margin: 40px;
+  justify-content: space-around;
+}
+.btn{
+  display: flex;
+  justify-content: space-evenly;
+}
+.start,button{
+  background-color: var(--button-background-color); 
+  color: var(--header-font-color);
+  border:none;
+  padding: 5px;
+  border-radius: 5px;
+  width: 50px;
+  height: 30px;
+}
+.msg{
+  height: 50px;
+}
+.restart,button{
+  background-color: #702727;
+  border:none;
+  padding: 5px;
+  color: #f6b7b7;
+  border-radius: 5px;
+  width: 50px;
+  height: 30px;
+}
+#gameBoard{
+  display: flex;
+  flex-wrap: wrap;
+  height: 310px;
+  justify-content: center;
+  align-items: center;
+  background-color: #181123;
+  border-radius: 10px;
+  margin: 10px;
+  color: white; 
+}
+.square{
+  display: flex;
+  flex-wrap:wrap;
+  float: left;
+  border: 1px solid var(--background-color);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 30%;
+  width: 30%;
+  font-size: 80px;
+  background-image: linear-gradient(45deg, #b0e4db, #4c5c68);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.msg, p{
+  margin-top: 40px;
+  text-align: center;
+  color: #181123;
+  font-size: 21px;
+  font-weight: bold;
+}
